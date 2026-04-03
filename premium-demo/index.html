@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orbit Forge Premium Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <div class="brand-mark"></div>
+        <div>
+          <div class="eyebrow">Orbit Forge</div>
+          <h1>Premium Demo</h1>
+        </div>
+      </div>
+      <nav class="nav-stack">
+        <button class="nav-item active" data-view="overview">Overview<small>Executive shell</small></button>
+        <button class="nav-item" data-view="validation">Product Validation<small>Live module</small></button>
+        <button class="nav-item" data-view="sourcing">Sourcing<small>Live module</small></button>
+        <button class="nav-item" data-view="roadmap">Roadmap<small>Future modules</small></button>
+      </nav>
+      <div class="status-card">
+        <div class="eyebrow">Build posture</div>
+        <div class="status-title">High-level product direction</div>
+        <p>This concept is designed to feel like a command system, not a prototype gallery.</p>
+      </div>
+    </aside>
+
+    <main class="main-shell">
+      <header class="hero-bar">
+        <div>
+          <div class="eyebrow">Amazon Private Label Command System</div>
+          <h2 id="hero-title">Orbit Forge Overview</h2>
+          <p id="hero-copy">A premium walkthrough of the v1 experience with stronger presentation, clearer hierarchy, and more decisive outputs.</p>
+        </div>
+        <div class="hero-stats">
+          <div class="metric-card"><div class="eyebrow">Active Modules</div><div class="metric-value">02</div></div>
+          <div class="metric-card"><div class="eyebrow">Coming Soon</div><div class="metric-value">04</div></div>
+          <div class="metric-card accent-good"><div class="eyebrow">System State</div><div class="metric-value">V1 Ready</div></div>
+          <div class="metric-card accent-soft"><div class="eyebrow">Positioning</div><div class="metric-value">Premium Demo</div></div>
+        </div>
+      </header>
+
+      <section class="view active" id="view-overview"></section>
+      <section class="view" id="view-validation"></section>
+      <section class="view" id="view-sourcing"></section>
+      <section class="view" id="view-roadmap"></section>
+    </main>
+  </div>
+
+  <dialog id="supplier-modal" class="modal">
+    <form method="dialog" class="modal-card" id="supplier-form">
+      <div class="modal-head">
+        <div><div class="eyebrow">Add Supplier</div><h3>New Supplier Card</h3></div>
+        <button class="close-btn" value="cancel" type="submit">Close</button>
+      </div>
+      <div class="grid-2 form-grid">
+        <label><span>Company</span><input name="company" required /></label>
+        <label><span>Representative</span><input name="representative" /></label>
+        <label><span>Contact</span><input name="contact" /></label>
+        <label><span>MOQ</span><input name="moq" /></label>
+        <label><span>Pricing</span><input name="pricing" /></label>
+        <label><span>Lead Time</span><input name="leadTime" /></label>
+        <label><span>Sample Cost</span><input name="sampleCost" /></label>
+        <label class="span-2"><span>Notes</span><textarea name="notes"></textarea></label>
+      </div>
+      <div class="modal-actions">
+        <button type="submit" value="cancel" class="secondary-btn">Cancel</button>
+        <button type="submit" value="save" class="primary-btn">Add Supplier</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="./app.js"></script>
+</body>
+</html>
